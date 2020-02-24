@@ -1,0 +1,40 @@
+// @import 'bulma';
+.row,
+.stack {
+	display: flex;
+	flex-wrap: wrap;
+}
+.stack {
+	flex-direction: column;
+}
+.space-start {
+	align-items: flex-start;
+}
+.content-centered {
+	justify-content: center;
+}
+.space-end {
+	align-items: flex-end;
+}
+.align-start {
+	align-items: flex-start;
+}
+.align-center {
+	align-items: center;
+}
+.align-end {
+	align-items: flex-end;
+}
+// gaping
+.space-between {
+	justify-content: space-between;
+}
+.space-around {
+	justify-content: space-around;
+}
+.space-start {
+	justify-content: flex-start;
+}
+.space-end {
+	justify-content: flex-end;
+}

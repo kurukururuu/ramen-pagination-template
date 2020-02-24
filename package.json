@@ -1,12 +1,23 @@
 {
   "name": "ramen-pagination-template",
-  "version": "0.1.0",
-  "private": true,
+  "version": "0.1.1",
+  "description": "Custom Pagination element for ramen-rest API",
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
+    "serve": "vue-cli-service serve ./docs/main",
+    "build": "vue-cli-service build --target lib --name RamenPaginationTemplate src/index.js",
+    "build:docs": "vue-cli-service build ./docs/main",
     "lint": "vue-cli-service lint"
   },
+  "main": "dist/RamenPaginationTemplate.umd.js",
+  "browser": "dist/RamenPaginationTemplate.common.js",
+  "unpkg": "dist/RamenPaginationTemplate.umd.min.js",
+  "jsDelivr": "dist/RamenPaginationTemplate.umd.min.js",
+  "files": [
+    "dist/*",
+    "src/*",
+    "*.json",
+    "*.js"
+  ],
   "dependencies": {
     "core-js": "^3.3.2",
     "vue": "^2.6.10"
@@ -15,10 +26,14 @@
     "@vue/cli-plugin-babel": "^4.0.0",
     "@vue/cli-plugin-eslint": "^4.0.0",
     "@vue/cli-service": "^4.0.0",
+    "axios": "^0.19.0",
     "babel-eslint": "^10.0.3",
     "eslint": "^5.16.0",
     "eslint-plugin-vue": "^5.0.0",
-    "vue-template-compiler": "^2.6.10"
+    "node-sass": "^4.13.0",
+    "sass-loader": "^8.0.0",
+    "vue-template-compiler": "^2.6.10",
+    "webpack": "^4.41.2"
   },
   "eslintConfig": {
     "root": true,
@@ -42,5 +57,9 @@
   "browserslist": [
     "> 1%",
     "last 2 versions"
-  ]
+  ],
+  "peerDependencies": {
+    "vue": "2.6.6"
+  },
+  "license": "MIT"
 }

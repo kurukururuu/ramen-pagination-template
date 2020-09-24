@@ -1,6 +1,6 @@
 {
   "name": "ramen-pagination-template",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Custom Pagination element for ramen-rest API",
   "scripts": {
     "serve": "vue-cli-service serve ./docs/main",
